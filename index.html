@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Clase PNT 08-02-23</title>
+</head>
+<body>
+	<h1>1.botones con acciones y mensajes</h1>
+	<button><h1>BOTON INUTIL 2</h1></button>
+	<br><br>
+	<button onclick="accion_1()" id="bt1">boton 1</button>
+	<br>
+	<button onclick="accion_2()" id="bt2">boton 2</button>
+	<br>
+	<br>
+	<button onclick="accion_3()" id="bt3">boton 3</button>
+	<br><br><br>
+	<h2>2.Despliegue de datos</h2>
+	<p><b>Hola, Dile a luigi tu ubicacion en coordenadas champiñon</b></p><br>
+
+	Primera parte:
+	<input type="text" name="RecibirNombre" id="tx1">
+	Segunda parte:
+	<input type="text" name="RecibirNombre" id="tx2">
+	<p>	
+	tercera parte:
+	<input type="text" name="RecibirNombre" id="tx3">	
+	cuarta parte:		
+	<input type="text" name="RecibirNombre" id="tx4">			
+	</p>
+
+	<button onclick="accion_4()" id="bt4">CONCATENAR</button>
+	<br><br>
+
+	co0rdenadas 1 y 2 SON: &nbsp;<output id="out1"></output>
+	coordenadas 3 y 4 SON: &nbsp;<output id="out2"></output>
+
+	<style type="text/css">
+		body
+		{
+			background-image: url(Luigi.jpg);
+			background-repeat: round;
+			color: rgba(40, 255, 120, 1.0);
+		}
+		h1{color: rgba(111, 222, 233, 1.0);}
+		h2{color: rgba(24, 255, 166, 1.0);}
+		#out1{color: rgba(240, 20, 20, 1.0);}
+		#out2{color: rgba(240, 20, 20, 1.0);}
+		
+	</style>
+ 
+ 	<script type="text/javascript">
+
+ 		function accion_1() 
+ 		{
+ 		alert("NEVER SAFE FROM LUIGIIIIIII")
+ 		}
+ 		function accion_2() 
+ 		{
+ 		confirm("LUIGIIIIIII")
+ 		}
+ 		function accion_3() 
+ 		{
+ 		alert("NSFW significa NEVER SAFE FROM WALUIGIIII");
+ 		confirm("Mensaje DE WALUIGIIIIIII")
+ 		}
+ 		function accion_4()
+ 		{
+ 			var NombreCompleto=document.getElementById("tx1").value+" "+document.getElementById("tx2").value+" "+
+ 			document.getElementById("tx3").value+" "+document.getElementById("tx4").value
+
+ 			alert("LUIGIIIIIII ya esta ahi, pero tu no, engañaste a LUIGIIIIIII "+NombreCompleto)
+
+ 			var Nombres=document.getElementById("tx1").value+" "+document.getElementById("tx2").value
+ 			var Apellidos=document.getElementById("tx3").value+" "+document.getElementById("tx4").value
+
+ 			document.getElementById("out1").innerHTML=Nombres
+ 			document.getElementById("out2").innerHTML=Apellidos
+
+ 		}
+
+
+
+ 	</script>
+</body>
+</html>
